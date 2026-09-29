@@ -1,412 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tap Vibe | Anoop V S</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    background: #eef1f5;
-    color: #111827;
-    min-height: 100vh;
-    padding: 20px 12px;
-}
-
-.card {
-    width: 100%;
-    max-width: 430px;
-    margin: auto;
-    background: #ffffff;
-    border-radius: 28px;
-    overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
-}
-
-/* HEADER */
-.header {
-    background: linear-gradient(135deg, #111827, #263447);
-    color: white;
-    text-align: center;
-    padding: 32px 20px 38px;
-}
-
-.brand {
-    font-size: 27px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-.brand span {
-    color: #38bdf8;
-}
-
-.tagline {
-    margin-top: 6px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    opacity: 0.75;
-}
-
-/* PROFILE */
-.profile {
-    text-align: center;
-    padding: 0 22px 25px;
-}
-
-.avatar {
-    width: 105px;
-    height: 105px;
-    margin: -52px auto 15px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #38bdf8, #2563eb);
-    border: 6px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 35px;
-    font-weight: 800;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
-}
-
-.name {
-    font-size: 27px;
-    font-weight: 800;
-}
-
-.profession {
-    margin-top: 5px;
-    color: #64748b;
-    font-size: 16px;
-}
-
-.country {
-    margin-top: 9px;
-    font-size: 14px;
-    color: #475569;
-}
-
-/* SECTION */
-.section-title {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #94a3b8;
-    margin: 5px 0 15px;
-}
-
-/* BUTTONS */
-.buttons {
-    padding: 0 22px;
-    display: grid;
-    gap: 11px;
-}
-
-.button {
-    text-decoration: none;
-    min-height: 53px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 0 18px;
-    font-size: 15px;
-    font-weight: 700;
-    transition: transform 0.15s;
-}
-
-.button:active {
-    transform: scale(0.97);
-}
-
-.icon {
-    width: 35px;
-    font-size: 21px;
-}
-
-.call {
-    background: #eaf3ff;
-    color: #1769aa;
-}
-
-.whatsapp {
-    background: #e9f9ef;
-    color: #168542;
-}
-
-.email {
-    background: #f1f3f5;
-    color: #343a40;
-}
-
-.instagram {
-    background: #fff0f5;
-    color: #c13584;
-}
-
-.location {
-    background: #fff4e8;
-    color: #c45a00;
-}
-
-.profile-link {
-    background: #eef2ff;
-    color: #4338ca;
-}
-
-/* SAVE BUTTON */
-.save-area {
-    padding: 22px;
-}
-
-.save-button {
-    width: 100%;
-    border: none;
-    border-radius: 16px;
-    min-height: 58px;
-    background: #111827;
-    color: white;
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    box-shadow: 0 8px 20px rgba(17,24,39,0.2);
-}
-
-.save-button:active {
-    transform: scale(0.98);
-}
-
-/* QR */
-.qr-section {
-    margin: 0 22px 25px;
-    padding: 22px;
-    background: #f8fafc;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.qr-title {
-    font-size: 15px;
-    font-weight: 800;
-    margin-bottom: 5px;
-}
-
-.qr-subtitle {
-    font-size: 12px;
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
-#qrcode {
-    display: flex;
-    justify-content: center;
-}
-
-#qrcode img {
-    padding: 8px;
-    background: white;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 0 20px 25px;
-    font-size: 11px;
-    color: #94a3b8;
-    letter-spacing: 1px;
-}
-
-@media (max-width: 380px) {
-    .name {
-        font-size: 24px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Tap Vibe | Anoop VS</title>  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .button {
-        min-height: 50px;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 25px 12px;
     }
-}
-</style>
-</head>
 
-<body>
+    .card {
+      width: 100%;
+      max-width: 430px;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
 
-<div class="card">
+    .header {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      text-align: center;
+      padding: 35px 20px 30px;
+    }
 
-    <!-- HEADER -->
-    <div class="header">
-        <div class="brand">TAP <span>VIBE</span></div>
-        <div class="tagline">SMART DIGITAL BUSINESS CARD</div>
-    </div>
+    .logo {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      background: white;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111827;
+      font-size: 22px;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
 
-    <!-- PROFILE -->
-    <div class="profile">
+    h1 {
+      margin-top: 18px;
+      font-size: 28px;
+    }
 
-        <div class="avatar">AV</div>
+    .job {
+      margin-top: 7px;
+      font-size: 16px;
+      opacity: 0.85;
+    }
 
-        <div class="name">ANOOP V S</div>
+    .content {
+      padding: 25px 20px;
+      text-align: center;
+    }
 
-        <div class="profession">Freelancer</div>
+    .about {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
 
-        <div class="country">🇦🇪 United Arab Emirates</div>
+    .buttons {
+      display: grid;
+      gap: 12px;
+    }
 
-    </div>
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
 
-    <!-- CONNECTION BUTTONS -->
-    <div class="section-title">
-        CONNECT WITH ME
-    </div>
+    .call { background: #2563eb; }
+    .whatsapp { background: #16a34a; }
+    .email { background: #7c3aed; }
+    .instagram { background: #db2777; }
+    .location { background: #ea580c; }
+    .save { background: #111827; }
 
-    <div class="buttons">
+    .qr-section {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid #eee;
+    }
 
-        <!-- CALL -->
-        <a class="button call"
-           href="tel:+971525670646">
-            <span class="icon">📞</span>
-            <span>Call Me</span>
-        </a>
+    .qr-section h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
 
-        <!-- WHATSAPP -->
-        <a class="button whatsapp"
-           href="https://wa.me/971525670646"
-           target="_blank">
-            <span class="icon">💬</span>
-            <span>WhatsApp</span>
-        </a>
+    #qrcode {
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
+    }
 
-        <!-- EMAIL -->
-        <a class="button email"
-           href="mailto:anoopvs2018@gmail.com">
-            <span class="icon">✉️</span>
-            <span>Email Me</span>
-        </a>
+    .qr-text {
+      font-size: 13px;
+      color: #777;
+      margin-top: 10px;
+    }
 
-        <!-- INSTAGRAM -->
-        <a class="button instagram"
-           href="https://www.instagram.com/be_water_m.y_friend/"
-           target="_blank">
-            <span class="icon">📷</span>
-            <span>Instagram</span>
-        </a>
+    .footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 13px;
+      color: #888;
+    }
 
-        <!-- LOCATION -->
-        <a class="button location"
-           href="https://www.google.com/maps/search/?api=1&query=Abu+Dhabi"
-           target="_blank">
-            <span class="icon">📍</span>
-            <span>Location</span>
-        </a>
+    .brand {
+      font-weight: bold;
+      color: #111827;
+    }
+  </style></head><body>  <div class="card"><div class="header">
+  <div class="logo">TV</div>
 
-        <!-- PROFILE LINK -->
-        <a class="button profile-link"
-           href="https://anoopvs2018-hue.github.io/Tap-vibe-card/"
-           target="_blank">
-            <span class="icon">🔗</span>
-            <span>My Tap Vibe Profile</span>
-        </a>
+  <h1>Anoop VS</h1>
 
-    </div>
+  <p class="job">Freelancer</p>
+</div>
 
-    <!-- SAVE CONTACT -->
-    <div class="save-area">
+<div class="content">
 
-        <button class="save-button" onclick="saveContact()">
-            💾 SAVE CONTACT
-        </button>
+  <p class="about">
+    Welcome to my Tap Vibe digital business card.
+    Connect with me using the buttons below.
+  </p>
 
-    </div>
+  <div class="buttons">
 
-    <!-- QR CODE -->
-    <div class="qr-section">
+    <a class="btn call" href="tel:+971525670646">
+      📞 Call
+    </a>
 
-        <div class="qr-title">
-            SCAN TO SHARE MY CARD
-        </div>
+    <a class="btn whatsapp"
+       href="https://wa.me/971525670646"
+       target="_blank">
+      💬 WhatsApp
+    </a>
 
-        <div class="qr-subtitle">
-            Scan this QR code to open my Tap Vibe profile
-        </div>
+    <a class="btn email"
+       href="mailto:anoopvs2018@gmail.com">
+      ✉️ Email
+    </a>
 
-        <div id="qrcode"></div>
+    <a class="btn instagram"
+       href="https://instagram.com/be_water_m.y_friend"
+       target="_blank">
+      📷 Instagram
+    </a>
 
-    </div>
+    <a class="btn location"
+       href="https://www.google.com/maps/search/?api=1&query=Abu+Dhabi"
+       target="_blank">
+      📍 Location
+    </a>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        POWERED BY TAP VIBE
-    </div>
+    <a class="btn save" href="anoop.vcf" download>
+      💾 Save Contact
+    </a>
+
+  </div>
+
+  <div class="qr-section">
+
+    <h2>Scan to Connect</h2>
+
+    <div id="qrcode"></div>
+
+    <p class="qr-text">
+      Scan this QR code to open my Tap Vibe card.
+    </p>
+
+  </div>
 
 </div>
 
+<div class="footer">
+  Powered by <span class="brand">Tap Vibe</span>
+</div>
 
-<!-- QR CODE LIBRARY -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </div>  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>  <script>
+    const pageURL = window.location.href;
 
-<script>
-
-/* TAP VIBE PROFILE URL */
-const profileURL =
-"https://anoopvs2018-hue.github.io/Tap-vibe-card/";
-
-
-/* CREATE QR CODE */
-new QRCode(document.getElementById("qrcode"), {
-    text: profileURL,
-    width: 190,
-    height: 190,
-    correctLevel: QRCode.CorrectLevel.H
-});
-
-
-/* SAVE CONTACT */
-function saveContact() {
-
-    const vCard =
-`BEGIN:VCARD
-VERSION:3.0
-FN:ANOOP V S
-N:V S;ANOOP;;;
-TITLE:Freelancer
-TEL;TYPE=CELL:+971525670646
-EMAIL:anoopvs2018@gmail.com
-URL:${profileURL}
-NOTE:Tap Vibe Digital Business Card
-END:VCARD`;
-
-    const blob = new Blob(
-        [vCard],
-        { type: "text/vcard;charset=utf-8" }
-    );
-
-    const url = URL.createObjectURL(blob);
-
-    const link = document.createElement("a");
-
-    link.href = url;
-    link.download = "Anoop-V-S.vcf";
-
-    document.body.appendChild(link);
-
-    link.click();
-
-    document.body.removeChild(link);
-
-    setTimeout(function() {
-        URL.revokeObjectURL(url);
-    }, 1000);
-}
-
-</script>
-
-</body>
+    new QRCode(document.getElementById("qrcode"), {
+      text: pageURL,
+      width: 180,
+      height: 180,
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script></body>
 </html>
